@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const helmet = require('helmet');
 const bcrypt = require('bcryptjs');
@@ -84,3 +85,12 @@ function restricted(req, res, next) {
 
 const port = process.env.PORT || 5000;
 server.listen(port, () => console.log(`\n** Running on port ${port} **\n`));;
+=======
+const server = require('./api/server.js');
+
+
+const port = process.env.PORT || 5000;
+server.listen(port, () =>
+  console.log(`\n** API running on http://localhost:${port} **\n`)
+);
+>>>>>>> 3e0028944eba96c0fbb552451bebdbc15e1334b0

@@ -4,8 +4,12 @@
   "description": "- Authentication.\r - Express Middleware.\r - Password Hashing.\r - Sessions\r - Cookies",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "server": "nodemon index.js",
     "start": "node index.js"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 3e0028944eba96c0fbb552451bebdbc15e1334b0
   },
   "repository": {
     "type": "git",
@@ -21,11 +25,16 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+<<<<<<< HEAD
     "helmet": "^3.18.0",
     "knex": "^0.17.6",
     "sqlite3": "^4.0.9"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
+=======
+    "knex": "^0.17.6",
+    "sqlite3": "^4.0.9"
+>>>>>>> 3e0028944eba96c0fbb552451bebdbc15e1334b0
   }
 }
