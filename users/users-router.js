@@ -48,6 +48,20 @@ router.post("/register", (req, res) => {
 });
 
 
+router.get('/logout', (req, res) => {
+  if(req.session) { // if someone is login then destory
+    req.session.destroy(err => {
+      if(err) { // if err exist or you can not destroy then do this
+        res.send('you can checkout but you cannot leave....')
+      } else{ //if destoryed then do this
+        res.send('bye, thanks for playing')
+      }
+    })
+  } else { // if there is no session then end request
+    res.end();
+  }
+})
+
 function restricted(req, res, next) {
   if (req.session && req.session.user) {
     next();
